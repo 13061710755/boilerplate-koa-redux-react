@@ -4,7 +4,9 @@
   "description": "test project",
   "main": "index.js",
   "scripts": {
-    "webserver": "node api/src/server.js"
+    "webserver": "node api/src/server.js",
+    "build": "node_modules/.bin/webpack",
+    "dev": "node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -20,9 +22,17 @@
   },
   "homepage": "https://github.com/13061710755/boilerplate-koa-redux-react#readme",
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^3.2.0",
     "koa": "^2.7.0",
     "koa-cors": "0.0.16",
     "koa-route": "^3.2.0",
-    "package": "^1.0.1"
+    "package": "^1.0.1",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
   }
 }
